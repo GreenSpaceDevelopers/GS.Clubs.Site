@@ -1,0 +1,428 @@
+.naviBar {
+    width: 100%;
+    height: 10%;
+    
+    padding: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: none;
+}
+
+.clubLogo {
+    width: 70%;
+    margin-left: 25%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    font-family: Alien Energy Rg;
+    font-size: 60px;
+    
+    margin: 0;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(90deg, 
+        #45FFA6, #21FF95,
+        silver, silver,
+        #0BE1D9, #10D4FF
+    );
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient 6s ease infinite;
+}
+
+#basic-navbar-nav {
+    display: flex !important;
+    justify-content: flex-end
+}
+
+.hrefContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row
+}
+
+.hrefContainer .regHref {
+    font-weight: 600;
+    color: #45FFA6;
+    background-color: transparent;
+    border: 1px solid #45FFA6;
+    border-radius: 10px;
+    padding: 6px 10px;
+    margin-right: 25px;
+    cursor: pointer;
+    box-shadow: #252525 4px 4px 0 0, #45FFA6 4px 4px 0 1px;
+    transition: all 170ms ease-in-out;
+    text-decoration: none;
+    
+    &:hover {
+        color: #252525;
+        background-color: transparent;
+        border-color: #45FFA6;
+        color: #252525;
+        border-color: #45FFA6;
+        box-shadow:transparent 4px 4px 0 0;
+        transform: translate(2px, 2px);
+        color: #45FFA6;
+        border-color: #45FFA6;
+        box-shadow:transparent 4px 4px 0 0;
+        transform: translate(2px, 2px);
+    }
+}
+
+.hrefContainer .telHref {
+    /* font-family: Nasalization Rg;
+    color: #45FFA6;
+    text-decoration: none;
+    font-weight: 600;*/
+    margin-right: 30px;
+    font-family: Nasalization Rg;
+    font-weight: 600;
+    color: #45FFA6;
+    background-color: transparent;
+    border: 1px solid #45FFA6;
+    border-radius: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+    box-shadow: #252525 4px 4px 0 0, #45FFA6 4px 4px 0 1px;
+    transition: all 170ms ease-in-out;
+    text-decoration: none;
+    
+    &:hover {
+        color: #45FFA6;
+        background-color: transparent;
+        border-color: #45FFA6;
+        color: #45FFA6;
+        background-color: transparent;
+        border-color: #45FFA6;
+        box-shadow:transparent 4px 4px 0 0;
+        transform: translate(2px, 2px);
+    }
+}
+
+.tgIcon {
+    width: 35px;
+    height: 35px;
+    color: #45FFA6;
+    margin-right: 20px;
+}
+
+.vkIcon {
+    width: 44px;
+    height: 44px;
+    margin-right: 15px;
+}
+
+@media(max-width: 390px) {
+    .naviBar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 0;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .vkTgLogo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .navbar-toggler {
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+        color: transparent;
+        background-color: transparent;
+        border: transparent;
+        border-radius: var(--bs-navbar-toggler-border-radius);
+        transition: var(--bs-navbar-toggler-transition);
+    }
+    
+    .clubLogo {
+        width: 50%; /* Уменьшите размер логотипа */
+        margin-left: 15%; /* Адаптируйте отступ слева */
+    }
+    
+    h1 {
+        font-size: 40px; /* Уменьшите размер шрифта */
+    }
+    
+    .hrefContainer {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    
+    .hrefContainer a {
+        display: flex;
+        margin-bottom: 9%;
+        justify-content: center;
+    }
+    
+    
+    
+    .telHref a {
+        padding: 4px 8px; /* Уменьшите внутренние отступы */
+        font-size: 0.8em; /* Уменьшите размер шрифта */
+    }
+    
+    .navbar-brand {
+        padding-bottom: 0;
+        margin-right: 0;
+        width: 25%;
+        margin-left: 5%;
+    }
+    
+    .telHref {
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 9%;
+    }
+    
+    #basic-navbar-nav {
+        flex-direction: column; /* Элементы в столбец */
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 450px) {
+    .naviBar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 0;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .vkTgLogo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .navbar-toggler {
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+        color: transparent;
+        background-color: transparent;
+        border: transparent;
+        border-radius: var(--bs-navbar-toggler-border-radius);
+        transition: var(--bs-navbar-toggler-transition);
+    }
+    
+    .clubLogo {
+        width: 50%; /* Уменьшите размер логотипа */
+        margin-left: 15%; /* Адаптируйте отступ слева */
+    }
+    
+    h1 {
+        font-size: 40px; /* Уменьшите размер шрифта */
+    }
+    
+    .hrefContainer {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .hrefContainer a {
+        display: flex;
+        margin-bottom: 9%;
+        justify-content: center;
+    }
+    
+    
+    
+    .telHref a {
+        padding: 4px 8px; /* Уменьшите внутренние отступы */
+        font-size: 0.8em; /* Уменьшите размер шрифта */
+    }
+    
+    .navbar-brand {
+        padding-bottom: 0;
+        margin-right: 0;
+        width: 25%;
+        margin-left: 5%;
+    }
+    
+    .telHref {
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 9%;
+    }
+    
+    #basic-navbar-nav {
+        flex-direction: column; /* Элементы в столбец */
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 820px) {
+    .naviBar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 0;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .vkTgLogo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .navbar-toggler {
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+        color: transparent;
+        background-color: transparent;
+        border: transparent;
+        border-radius: var(--bs-navbar-toggler-border-radius);
+        transition: var(--bs-navbar-toggler-transition);
+    }
+    
+    .clubLogo {
+        width: 50%; /* Уменьшите размер логотипа */
+        margin-left: 15%; /* Адаптируйте отступ слева */
+    }
+    
+    h1 {
+        font-size: 40px; /* Уменьшите размер шрифта */
+    }
+    
+    .hrefContainer {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .hrefContainer a {
+        display: flex;
+        margin-bottom: 9%;
+        justify-content: center;
+    }
+    
+    
+    
+    .telHref a {
+        padding: 4px 8px; /* Уменьшите внутренние отступы */
+        font-size: 0.8em; /* Уменьшите размер шрифта */
+    }
+    
+    .navbar-brand {
+        padding-bottom: 0;
+        margin-right: 0;
+        width: 25%;
+        margin-left: 5%;
+    }
+    
+    .telHref {
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 9%;
+    }
+    
+    #basic-navbar-nav {
+        flex-direction: column; /* Элементы в столбец */
+        align-items: flex-start;
+    }
+}
+
+.carousel {
+    position: static !important;
+}
+
+.carousel {
+    position: static !important;
+}
+

@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('./assets/fonts/Proxima_nova/ProximaNova-Regular.eot');
+    src: local('./assets/fonts/Proxima_nova/Proxima Nova Regular'), local('ProximaNova-Regular'),
+        url('./assets/fonts/Proxima_nova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Proxima_nova/ProximaNova-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Proxima_nova/ProximaNova-Regular.woff') format('woff'),
+        url('./assets/fonts/Proxima_nova/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: "Nasalization Rg";
+    src: url('./assets/fonts/Nasalization/Nasalization.ttf')format("truetype")
+}
+
+@font-face {
+    font-family: "Alien Energy Rg";
+    src: url('./assets/fonts/Alien_energy/AlienEnergy.ttf')format("truetype")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #252525 !important; */
+    background-image: url('./images/background_radiance.png') !important;
 }
