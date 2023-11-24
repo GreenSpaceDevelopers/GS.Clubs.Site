@@ -21,7 +21,7 @@
 
 .clubLogo {
     width: 70%;
-    margin-left: 25%;
+    margin-left: 17%;
 }
 
 @keyframes gradient {
@@ -193,7 +193,7 @@ h1 {
     
     .clubLogo {
         width: 50%; 
-        margin-left: 15%;
+        margin-left: 17%;
         margin-bottom: 4%;
     }
     
@@ -267,6 +267,13 @@ h1 {
     #basic-navbar-nav {
         flex-direction: column; 
         align-items: flex-start;
+    }
+    
+    .tgIcon {
+        width: 35px;
+        height: 35px;
+        color: #45FFA6;
+        margin-right: 0;
     }
 }
 

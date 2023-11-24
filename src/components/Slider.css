@@ -36,7 +36,7 @@
     .carousel-control-next, .carousel-control-prev {
         position: absolute;
         top: 0%;
-        bottom: 0;
+        bottom: -50px;
         width: 39%;
         text-align: center;
         width: 100%;
