@@ -12,6 +12,7 @@
     align-content: normal;
     justify-content: flex-start;
     align-items: center;
+    z-index: 1000;
 }
 
 .navbar-brand {
@@ -74,7 +75,8 @@ h1 {
 }
 
 .hrefContainer .regHref {
-    font-weight: 600;
+    font-family: Nasalization Rg;
+    font-weight: 300;
     color: #45FFA6;
     background-color: transparent;
     border: 1px solid #45FFA6;
@@ -83,7 +85,7 @@ h1 {
     margin-right: 25px;
     cursor: pointer;
     box-shadow: #252525 4px 4px 0 0, #45FFA6 4px 4px 0 1px;
-    transition: all 170ms ease-in-out;
+    transition: all 300ms ease;
     text-decoration: none;
     
     &:hover {
@@ -92,23 +94,19 @@ h1 {
         border-color: #45FFA6;
         color: #252525;
         border-color: #45FFA6;
-        box-shadow:transparent 4px 4px 0 0;
+        box-shadow: transparent 4px 4px 0 0;
         transform: translate(2px, 2px);
         color: #45FFA6;
         border-color: #45FFA6;
-        box-shadow:transparent 4px 4px 0 0;
+        box-shadow: transparent 4px 4px 0 0;
         transform: translate(2px, 2px);
     }
 }
 
 .hrefContainer .telHref {
-    /* font-family: Nasalization Rg;
-    color: #45FFA6;
-    text-decoration: none;
-    font-weight: 600;*/
     margin-right: 30px;
     font-family: Nasalization Rg;
-    font-weight: 600;
+    font-weight: 300;
     color: #45FFA6;
     background-color: transparent;
     border: 1px solid #45FFA6;
@@ -116,7 +114,7 @@ h1 {
     padding: 6px 10px;
     cursor: pointer;
     box-shadow: #252525 4px 4px 0 0, #45FFA6 4px 4px 0 1px;
-    transition: all 170ms ease-in-out;
+    transition: all 300ms ease;
     text-decoration: none;
     
     &:hover {
@@ -144,187 +142,12 @@ h1 {
     margin-right: 15px;
 }
 
-@media(max-width: 390px) {
-    .naviBar {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: space-around;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        --bs-gutter-x: 0;
-        --bs-gutter-y: 0;
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-        margin-right: 0;
-        margin-left: 0;
-    }
-    
-    .vkTgLogo {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: space-around;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15px;
-    }
-    
-    .navbar-toggler {
-        padding: 0;
-        font-size: 0;
-        line-height: 0;
-        color: transparent;
-        background-color: transparent;
-        border: transparent;
-        border-radius: var(--bs-navbar-toggler-border-radius);
-        transition: var(--bs-navbar-toggler-transition);
-    }
-    
-    .clubLogo {
-        width: 50%; /* Уменьшите размер логотипа */
-        margin-left: 15%; /* Адаптируйте отступ слева */
-    }
-    
-    h1 {
-        font-size: 40px; /* Уменьшите размер шрифта */
-    }
-    
-    .hrefContainer {
-        display: flex;
-        align-items: stretch;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-    }
-    
-    .hrefContainer a {
-        display: flex;
-        margin-bottom: 9%;
-        justify-content: center;
-    }
-    
-    
-    
-    .telHref a {
-        padding: 4px 8px; /* Уменьшите внутренние отступы */
-        font-size: 0.8em; /* Уменьшите размер шрифта */
-    }
-    
-    .navbar-brand {
-        padding-bottom: 0;
-        margin-right: 0;
-        width: 25%;
-        margin-left: 5%;
-    }
-    
-    .telHref {
-        display: flex;
-        justify-content: center;
-        justify-content: center;
-        margin-top: 5%;
-        margin-bottom: 9%;
-    }
-    
-    #basic-navbar-nav {
-        flex-direction: column; /* Элементы в столбец */
-        align-items: flex-start;
-    }
+.carousel {
+    position: static !important;
 }
 
-@media (max-width: 450px) {
-    .naviBar {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: space-around;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        --bs-gutter-x: 0;
-        --bs-gutter-y: 0;
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-        margin-right: 0;
-        margin-left: 0;
-    }
-    
-    .vkTgLogo {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: space-around;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15px;
-    }
-    
-    .navbar-toggler {
-        padding: 0;
-        font-size: 0;
-        line-height: 0;
-        color: transparent;
-        background-color: transparent;
-        border: transparent;
-        border-radius: var(--bs-navbar-toggler-border-radius);
-        transition: var(--bs-navbar-toggler-transition);
-    }
-    
-    .clubLogo {
-        width: 50%; /* Уменьшите размер логотипа */
-        margin-left: 15%; /* Адаптируйте отступ слева */
-    }
-    
-    h1 {
-        font-size: 40px; /* Уменьшите размер шрифта */
-    }
-    
-    .hrefContainer {
-        display: flex;
-        align-items: stretch;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    .hrefContainer a {
-        display: flex;
-        margin-bottom: 9%;
-        justify-content: center;
-    }
-    
-    
-    
-    .telHref a {
-        padding: 4px 8px; /* Уменьшите внутренние отступы */
-        font-size: 0.8em; /* Уменьшите размер шрифта */
-    }
-    
-    .navbar-brand {
-        padding-bottom: 0;
-        margin-right: 0;
-        width: 25%;
-        margin-left: 5%;
-    }
-    
-    .telHref {
-        display: flex;
-        justify-content: center;
-        justify-content: center;
-        margin-top: 5%;
-        margin-bottom: 9%;
-    }
-    
-    #basic-navbar-nav {
-        flex-direction: column; /* Элементы в столбец */
-        align-items: flex-start;
-    }
+.carousel {
+    position: static !important;
 }
 
 @media (max-width: 820px) {
@@ -369,12 +192,13 @@ h1 {
     }
     
     .clubLogo {
-        width: 50%; /* Уменьшите размер логотипа */
-        margin-left: 15%; /* Адаптируйте отступ слева */
+        width: 50%; 
+        margin-left: 15%;
+        margin-bottom: 4%;
     }
     
     h1 {
-        font-size: 40px; /* Уменьшите размер шрифта */
+        font-size: 40px; 
     }
     
     .hrefContainer {
@@ -390,11 +214,9 @@ h1 {
         justify-content: center;
     }
     
-    
-    
     .telHref a {
-        padding: 4px 8px; /* Уменьшите внутренние отступы */
-        font-size: 0.8em; /* Уменьшите размер шрифта */
+        padding: 4px 8px; 
+        font-size: 0.8em;
     }
     
     .navbar-brand {
@@ -402,6 +224,36 @@ h1 {
         margin-right: 0;
         width: 25%;
         margin-left: 5%;
+    }
+    
+    .hrefContainer .regHref {
+        font-family: Nasalization Rg;
+        font-weight: 300;
+        color: #45FFA6;
+        background-color: transparent;
+        border: 1px solid #45FFA6;
+        border-radius: 10px;
+        padding: 6px 10px;
+        margin-right: 1px;
+        cursor: pointer;
+        box-shadow: #252525 4px 4px 0 0, #45FFA6 4px 4px 0 1px;
+        transition: all 300ms ease;
+        text-decoration: none;
+    }
+    
+    .hrefContainer .telHref {
+        margin-right: 1px;
+        font-family: Nasalization Rg;
+        font-weight: 300;
+        color: #45FFA6;
+        background-color: transparent;
+        border: 1px solid #45FFA6;
+        border-radius: 10px;
+        padding: 6px 10px;
+        cursor: pointer;
+        box-shadow: #252525 4px 4px 0 0, #45FFA6 4px 4px 0 1px;
+        transition: all 300ms ease;
+        text-decoration: none;
     }
     
     .telHref {
@@ -413,16 +265,9 @@ h1 {
     }
     
     #basic-navbar-nav {
-        flex-direction: column; /* Элементы в столбец */
+        flex-direction: column; 
         align-items: flex-start;
     }
 }
 
-.carousel {
-    position: static !important;
-}
-
-.carousel {
-    position: static !important;
-}
 

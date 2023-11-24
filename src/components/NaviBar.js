@@ -22,11 +22,11 @@ function NaviBar() {
                     <Nav>
                         <div className='hrefContainer'>
                             <div className="vkTgLogo">
-                                <a href="https://vk.com/greenspacegg" className='vkHref'><img src={vkIcon} className="vkIcon"/></a>
-                                <a href="https://t.me/greenspacegg" className='tgHref'><BsTelegram className="tgIcon"/></a>
+                                <a href="https://vk.com/greenspacegg" className='vkHref' target="_blank" rel="noopener noreferrer"><img src={vkIcon} className="vkIcon" alt="VK"/></a>
+                                <a href="https://t.me/greenspacegg" className='tgHref' target="_blank" rel="noopener noreferrer"><BsTelegram className="tgIcon"/></a>
                             </div>
-                            <a href="https://clck.ru/35dJZU" className='regHref'>Онлайн бронирование</a>
-                            <a href="tel:555-555-5555" className="telHref">+7 (921) 310-77-99</a>
+                            <a href="https://clck.ru/35dJZU" className='regHref' target="_blank" rel="noopener noreferrer">Онлайн бронирование</a>
+                            <a href="tel:+79213107799" className="telHref">+7 (921) 310-77-99</a>
                         </div>
                     </Nav>
                 </Navbar.Collapse>
