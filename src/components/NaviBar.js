@@ -7,6 +7,8 @@ import './NaviBar.css'
 import React from "react";
 import clubLogo from '../images/club_logo.svg';
 import { BsTelegram } from "react-icons/bs";
+// import { FaMapMarkedAlt } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import vkIcon from '../images/vk_icon.svg';
 
 function NaviBar() {
@@ -22,6 +24,7 @@ function NaviBar() {
                     <Nav>
                         <div className='hrefContainer'>
                             <div className="vkTgLogo">
+                                <a href="https://yandex.ru/maps/-/CDu0vL5A" className="mapHref" target="_blank" rel="noopener noreferrer"><FaMapMarkerAlt className="mapIcon"/></a>
                                 <a href="https://vk.com/greenspacegg" className='vkHref' target="_blank" rel="noopener noreferrer"><img src={vkIcon} className="vkIcon" alt="VK"/></a>
                                 <a href="https://t.me/greenspacegg" className='tgHref' target="_blank" rel="noopener noreferrer"><BsTelegram className="tgIcon"/></a>
                             </div>

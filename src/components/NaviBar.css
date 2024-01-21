@@ -142,6 +142,13 @@ h1 {
     margin-right: 15px;
 }
 
+.mapIcon {
+    width: 34px;
+    height: 34px;
+    color: #45FFA6;
+    margin-right: 14px;
+}
+
 .carousel {
     position: static !important;
 }

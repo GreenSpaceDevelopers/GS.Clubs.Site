@@ -28,6 +28,7 @@ function Main() {
             <Slider />
             <div className='swapText'>
                 {currentMessage}
+                <p>Итальянская 12Е</p>
             </div>
         </div>
     );
