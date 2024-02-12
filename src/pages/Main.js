@@ -23,6 +23,7 @@ function Main() {
         return () => clearInterval(intervalId);
     }, [index]);
     
+    
     return (
         <div className='mainContainer'>
             <Slider />
